@@ -1,0 +1,17 @@
+GET http://localhost:8080/feedback?givenBy=Yerko
+Accept: application/json
+
+###
+GET http://localhost:8080/feedback/all
+Accept: application/json
+###
+
+POST http://localhost:8080/feedback
+Content-Type: application/json
+
+{
+  "id": {{$randomInt}},
+  "givenBy": "javi",
+  "feedback": "Should improve in css stuff999"
+}
+
